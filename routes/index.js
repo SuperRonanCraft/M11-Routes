@@ -4,11 +4,11 @@ const router = require("express").Router();
 const tipsRouter = require("./tips");
 const feedbackRouter = require("./feedback");
 // TODO: import your diagnostics route
-const feedbackRouter = require("./diagnostics");
+const diagnosticsRouter = require("./diagnostics");
 
 router.use("/tips", tipsRouter);
 router.use("/feedback", feedbackRouter);
 // TODO: Initialize diagnostics route
-router.use("/diagnostics", feedbackRouter);
+router.use("/diagnostics", diagnosticsRouter);
 
 module.exports = router;
